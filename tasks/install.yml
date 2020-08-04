@@ -97,7 +97,7 @@
   file:
     path: "{{ item }}"
     state: "absent"
-  become: false
+  #become: false
   with_fileglob: "{{ role_path }}/files/vault"
   run_once: true
   tags: installation
